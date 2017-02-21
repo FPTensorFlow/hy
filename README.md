@@ -10,9 +10,19 @@ Hy
 
 Lisp and Python should love each other. Let's make it happen. [Try it](http://try-hy.appspot.com/).
 
-Hylarious Hacks
+Hylarious Hacks : 调用Python的各类的库
 ---------------
-
+* [Numpy]()
+```clojure
+➜  ~ hy
+hy 0.12.1+24.g45b7a4a using CPython(default) 2.7.13 on Darwin
+=> (import numpy)
+=> (setv a (numpy.array [[1 2] [3 4]]))
+=> (slice a 0)
+slice(array([[1, 2],
+       [3, 4]]), 0L, None)
+=> 
+```
 * [Django + Lisp](https://github.com/paultag/djlisp/tree/master/djlisp)
 * [Python `sh` Fun](https://twitter.com/paultag/status/314925996442796032)
 * [Hy IRC Bot](https://github.com/hylang/hygdrop)
